@@ -1,0 +1,1181 @@
+/u/fyue/huashan/daoguan.c line 49: Warning: Unused local variable 'ob' before the end of line
+/u/fyue/huashan/daoguan.c line 49: Warning: Unused local variable 'dir' before the end of line
+/u/fyue/huashan/map.c line 2: parse error before 3/4¡°ÏÀ¿ÍĞĞ¡±»ªÉ1/2Í
+/u/fyue/misc/board.c line 347: Warning: Unused local variable 'transfer' before the end of line
+/u/fyue/misc/rbc.c line 107: Warning: Unused local variable 'i' before the end of line
+/u/fyue/misc/rbc.c line 128: Warning: Unused local variable 'i' before the end of line
+/u/fyue/misc/rbc.c line 148: Warning: Unused local variable 'i' before the end of line
+/u/fyue/misc/space.c line 86: Warning: Unused local variable 'money' before the end of line
+/u/fyue/misc/space.c line 181: Warning: Unused local variable 'link_ob' before the end of line
+/u/fyue/long.c line 132: Warning: Unused local variable 'dir' before the end of line
+/u/fyue/long.c line 132: Warning: Unused local variable 'dir2' before the end of line
+/u/fyue/long.c line 199: Reserved type name unexpected. before =(int)ob->query("mud
+/u/fyue/long.c line 199: parse error before =(int)ob->query("mud
+/u/fyue/long.c line 199: Undefined variable 'ob' before query("mud_age") / 8
+/u/fyue/long.c line 199: Illegal LHS before the end of line
+/u/fyue/long.c line 200: Undefined variable 'arg' before  arg=="" )  return n
+/u/fyue/long.c line 210: Undefined variable 'age' before  19 ){
+/u/fyue/111.c line 472: parse error before the end of line
+/u/fyue/111.c line 473: Illegal LHS before the end of line
+/u/fyue/combatd.c line 614: Reserved type name unexpected. before (object me, object v
+/u/fyue/combatd.c line 614: parse error before (object me, object v
+/u/fyue/combatd.c line 614: Reserved type name unexpected. before (object me, object v
+/u/fyue/combatd.c line 614: parse error before (object me, object v
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mj.c line 785: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mj.c line 859: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mj.c line 1390: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mj.c line 1540: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mj.c line 1540: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mj.c line 1569: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mj.c line 1589: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mj.c line 1628: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mj.c line 1641: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mj.c line 1650: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mj.c line 1654: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mj.c line 1658: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mj.c line 1662: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mj.c line 1888: Warning: Unused local variable 'str' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 310: Undefined variable 'RECORD_D' before query_mj_data();
+/u/fyue/mjlady3.c line 701: Undefined variable 'RECORD_D' before query_mj_data();
+/u/fyue/mjlady3.c line 1029: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1103: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1703: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1874: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1874: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1913: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1933: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1959: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1962: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1965: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1968: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2005: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2018: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2028: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2032: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2036: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2040: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2527: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2622: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 310: Undefined variable 'RECORD_D' before query_mj_data();
+/u/fyue/mjlady3.c line 701: Undefined variable 'RECORD_D' before query_mj_data();
+/u/fyue/mjlady3.c line 1029: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1103: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1703: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1874: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1874: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1913: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1933: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1959: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1962: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1965: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1968: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2005: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2018: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2028: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2032: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2036: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2040: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2527: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2622: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 310: Undefined variable 'RECORD_D' before query_mj_data();
+/u/fyue/mjlady3.c line 701: Undefined variable 'RECORD_D' before query_mj_data();
+/u/fyue/mjlady3.c line 1029: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1103: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1703: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1874: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1874: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1913: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1933: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1959: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1962: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1965: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1968: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2005: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2018: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2028: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2032: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2036: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2040: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2527: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2622: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2637: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 322: Undefined variable 'RECORD_D' before set_mj_data(record);
+/u/fyue/mjlady3.c line 1027: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1101: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1701: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1872: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1872: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1911: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1931: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1957: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1960: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1963: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1966: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2003: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2016: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2026: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2030: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2034: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2038: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2525: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2620: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2635: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2635: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2635: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2635: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 384: Undefined variable 'RECORD_D' before query_mj_data();
+/u/fyue/mjlady3.c line 1026: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1100: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1700: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1871: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1871: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1910: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1930: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1956: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1959: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1962: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1965: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2002: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2015: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2025: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2029: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2033: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2037: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2524: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2619: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2634: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2634: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2634: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2634: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 396: Undefined variable 'RECORD_D' before set_mj_data(record);
+/u/fyue/mjlady3.c line 1025: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1099: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1699: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1870: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1870: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1909: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1929: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1955: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1958: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1961: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1964: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2001: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2014: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2024: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2028: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2032: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2036: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2523: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2618: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2633: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2633: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2633: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2633: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 1024: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1098: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1698: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1908: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1928: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1954: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1957: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1960: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1963: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2000: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2013: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2023: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2027: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2031: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2035: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2522: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2617: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 1024: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1098: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1698: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1908: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1928: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1954: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1957: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1960: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1963: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2000: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2013: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2023: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2027: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2031: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2035: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2522: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2617: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 1024: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1098: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1698: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1908: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1928: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1954: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1957: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1960: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1963: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2000: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2013: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2023: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2027: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2031: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2035: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2522: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2617: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/donkey.c line 219: Warning: Unused local variable 'ob' before the end of line
+/u/fyue/donkey.c line 219: Warning: Unused local variable 'count' before the end of line
+/u/fyue/donkey.c line 219: Warning: Unused local variable 'my_dex' before the end of line
+/u/fyue/donkey.c line 219: Warning: Unused local variable 'i' before the end of line
+/u/fyue/jail.c line 100: parse error before u/fyue/jail);
+/u/fyue/jail.c line 165: Illegal LHS before the end of line
+/u/fyue/jail.c line 165: parse error before the end of line
+/u/fyue/jail.c line 176: Illegal LHS before the end of line
+/u/fyue/jail.c line 176: parse error before the end of line
+/u/fyue/jail.c line 177: Illegal LHS before  return notify_fail(
+/u/fyue/jail.c line 100: parse error before u/fyue/jail);
+/u/fyue/jail.c line 165: Illegal LHS before the end of line
+/u/fyue/jail.c line 165: parse error before the end of line
+/u/fyue/jail.c line 176: Illegal LHS before the end of line
+/u/fyue/jail.c line 176: parse error before the end of line
+/u/fyue/jail.c line 177: Illegal LHS before  return notify_fail(
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 1024: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1098: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1698: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1908: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1928: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1954: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1957: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1960: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1963: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2000: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2013: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2023: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2027: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2031: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2035: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2522: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2617: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 1024: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1098: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1698: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1908: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1928: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1954: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1957: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1960: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1963: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2000: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2013: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2023: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2027: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2031: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2035: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2522: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2617: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/wzl.c line 133: Warning: Unused local variable 'dest' before the end of line
+/u/fyue/wzl.c line 133: Warning: Unused local variable 'ob' before the end of line
+/u/fyue/wzl.c line 134: parse error before ( !target || target=
+/u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+ before #define CSI	ESC + "[
+/u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+ before #define BEEP    ""
+/u/fyue/mjlady3.c line 1024: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1098: Warning: Unused local variable 'k' before the end of line
+/u/fyue/mjlady3.c line 1698: Warning: Unused local variable 'b' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'temp1' before the end of line
+/u/fyue/mjlady3.c line 1869: Warning: Unused local variable 'j' before the end of line
+/u/fyue/mjlady3.c line 1908: Warning: Unused local variable 'check' before the end of line
+/u/fyue/mjlady3.c line 1928: Warning: Unused local variable 'newstr' before the end of line
+/u/fyue/mjlady3.c line 1954: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1957: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1960: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 1963: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2000: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2013: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2023: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2027: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2031: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2035: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2522: Warning: Unknown \ escape. before ò¡£");
+/u/fyue/mjlady3.c line 2617: Warning: Unknown \ escape. before ÚÍâÃæµÄÅÆÓĞ:\n";
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p1o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p2o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p3o' before the end of line
+/u/fyue/mjlady3.c line 2632: Warning: Unused local variable 'p4o' before the end of line
+/u/fyue/questd.c line 112: Warning: Unused local variable 'obj1' before the end of line
+/u/fyue/questd.c line 112: Warning: Unused local variable 'obj2' before the end of line
+/u/fyue/questd.c line 112: Warning: Unused local variable 'obj3' before the end of line
+/u/fyue/questd.c line 112: Warning: Unused local variable 'next_obj' before the end of line
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+
+u/fyue/ansi2.h line 7: Warning: redefinition of #define ESC
+
+u/fyue/ansi2.h line 8: Warning: redefinition of #define CSI
+

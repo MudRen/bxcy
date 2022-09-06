@@ -1,0 +1,166 @@
+// marry_ring.c - Ω·ªÈΩ‰÷∏
+
+#include <ansi.h>
+#include <mudlib.h>
+#include <armor.h>
+
+inherit FINGER;
+
+int do_coupletalk(string arg, int emote);
+
+object find_player(string target)
+{
+	int i;
+	object *str;
+	str=users();
+	for (i=0;i<sizeof(str);i++)
+		if (str[i]->query("id")==target && interactive(str[i]))
+			return str[i];
+	return 0;
+}
+
+
+
+string couplename( object ob ) {
+	if( ob ) {
+		if( (string)ob->query("gender") == "≈Æ–‘" ) return "¿œ∆≈" + ob->name(1);
+		if( (string)ob->query("gender") == "ƒ––‘" ) return "¿œπ´" + ob->name(1);
+		return "æ…∞È¬¬" + ob->name(1);
+	}
+}
+
+void init()
+{
+        add_action("do_coupletalk_0", "ct");
+        add_action("do_coupletalk_1", "ct*");
+        add_action("do_coupletalk_2", "ct#");
+}
+
+int do_coupletalk_0(string arg) { return do_coupletalk( arg, 0 ); }
+
+int do_coupletalk_1(string arg) { return do_coupletalk( arg, 1 ); }
+
+int do_coupletalk_2(string arg) { return do_coupletalk( arg, 2 ); }
+
+void dest() { destruct(this_object()); }
+
+void owner_is_killed() { call_out("dest",2); }
+
+int do_coupletalk(string arg, int emote)
+{
+        object me, couple_ob;
+        int i;
+
+        me = this_player();
+
+        if ( !stringp(me->query("marry")) )
+                return notify_fail("ƒ„√ª”–∞È¬¬°£\n");
+
+        couple_ob = find_player( me->query("marry") );
+        if( !couple_ob )
+                return  notify_fail("ƒ„µƒ∞È¬¬œ÷‘⁄Œﬁ∑®Ã˝º˚ƒ„£¨ªÚ’ﬂ“—æ≠¿Îø™”Œœ∑¡À°£\n");
+
+        if ((string)couple_ob->query("gender") == "Œﬁ–‘") 
+                return  notify_fail("ƒ„‘≠¿¥µƒ∞È¬¬“—æ≠◊ˆ¡ÀÃ´º‡£¨ƒ„ªπ «∞—À˚Õ¸¡À∞…°£\n");
+
+        if ((string)couple_ob->query("class") == "bonze") 
+                return  notify_fail("ƒ„‘≠¿¥µƒ∞È¬¬“—æ≠◊ˆ¡À∫Õ…–£¨ƒ„ªπ «∞—À˚Õ¸¡À∞…°£\n");
+
+        if ( !arg ) {
+                write( MAG "ƒ„”÷…Ó«ÈµÿœÎƒÓƒ„µƒ∞Æ¬¬¡À°£\n" NOR);
+                tell_room(environment(me), CYN + (string)me->name() + "”÷‘⁄…Ó«ÈµÿœÎƒÓ◊‘º∫µƒ∞Æ¬¬" 
+			+ (string)couple_ob->name() + "°£\n" + NOR, ({me, couple_ob}));
+                tell_object(couple_ob, sprintf(HIM "%s”÷‘⁄…Ó«ÈµÿœÎƒÓƒ„¡À°£\n"NOR, couplename( me ) ) ); 
+
+                return 1;
+        }
+	
+        if (!stringp(arg) || arg == "" || arg == " ") arg = "...";
+
+        // Support of channel emote
+        if( emote ) {
+                string vb, emote_arg;
+
+                if( sscanf(arg, "%s %s", vb, emote_arg) != 2 ) {
+                        vb = arg;
+                        emote_arg = couple_ob->query("id");
+                }
+
+		// If out support of channel emote and still send this message
+        	if (emote == 2){
+                 	arg = me->name() + vb + "\n";
+	        	tell_object( me, MAG + arg + NOR);
+	        	tell_object( couple_ob, MAG + arg + NOR);
+		}else{
+			arg=EMOTE_D->do_emote(me,vb,emote_arg,3);
+	        	if (arg)       	tell_object( me, MAG + arg + NOR);
+			arg=EMOTE_D->do_emote(me,vb,emote_arg,4);
+	        	if (arg)       	tell_object( couple_ob, MAG + arg + NOR);
+		}
+	        return 1;
+
+        }
+	else {
+	        write(sprintf(MAG "ƒ„∂‘%sÀµ£∫%s\n" NOR, couplename( couple_ob ), arg ));
+        	tell_object(couple_ob, sprintf(HIM "%s∂‘ƒ„Àµ£∫%s\n" NOR, couplename( me ), arg ));
+	}
+
+        return 1;
+}
+
+void create()
+{
+        set_name( HIY "Ω·ªÈΩ‰÷∏" NOR, ({"marry ring", "ring"}) );
+        set_weight(400);
+        set( "no_get", 1);
+	set( "no_put", 1 );
+        set( "no_drop", "ƒ„µƒΩ·ªÈΩ‰÷∏≤ªƒ‹∂™∆˙,÷ªƒ‹»•∫ÏƒÔ◊ØΩ‚≥˝ªÈ‘º°£\n");
+        set( "long", @LONG
+’‚ «“ª√∂Ω·ªÈΩ‰÷∏°£ƒ„ø…“‘ π”√“‘œ¬√¸¡Ó£∫
+[36m
+coupletalk ( ct )	∫Õ∞È¬¬∂‘ª∞°£
+
+÷ß≥÷√¸¡Ó£∫ct, ct#, ct*
+[2;37;0m
+LONG
+	);
+        if( clonep() )
+                set_default_object(__FILE__);
+        else {
+                set("unit", "√∂");
+                set("material", "gold");
+		set("armor_type", "finger");
+                set("armor_prop/armor", 10);
+		set("armor_prop/defense", 10);
+	        set("wear_msg", "$NΩ´$nƒ√≥ˆ¿¥–°–ƒµÿ¥˜‘⁄ ÷÷∏…œ°£\n");
+	        set("remove_msg", "$NΩ´$n–°–ƒµÿ¥” ÷÷∏…œ’™œ¬¿¥∑≈∫√°£\n");
+        }
+	call_out("load_ring",1);
+}
+
+void load_ring()
+{
+	        object me, couple_ob;
+			me = environment(this_object());
+			if (!me || !userp(me)){
+				call_out("dest",1);
+				return;
+			}
+			if( me->query("marry") ) {
+			        couple_ob = find_player( me->query("marry") );
+                    if (couple_ob && environment(couple_ob) ){
+                          if (couple_ob->query("marry")!=me->query("id") ){
+                               me->delete("marry");
+                                me->delete("couple");
+                               tell_object(me,HIY "ƒ„µƒ∞È¬¬“—æ≠÷ÿ–¬Õ∂Ã•¡À,»Áπ˚ƒ„√«”–‘µ...\n"NOR);
+                               destruct(this_object()); 
+                               return;
+                          }
+		        	 	tell_object(me, HIM "\nƒ„µƒ" + couplename( couple_ob ) + "“≤‘⁄’‚¿Ô£¨øÏ»•’“¿≤....\n" NOR);
+		                	tell_object(couple_ob , sprintf( HIM "\nƒ„µƒ%s¿¥¿≤£¨øÏ»•Ω”—Ω....\n" NOR, couplename( me ) ));
+			        }
+			        set("name", HIC+me->query("id")+HIY "∫Õ" HIC + me->query("marry") + HIY "µƒΩ·ªÈΩ‰÷∏" NOR );
+			}
+			this_object()->wear();
+
+}
