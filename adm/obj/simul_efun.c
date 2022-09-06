@@ -1,10 +1,5 @@
 //#pragma optimize all
 
-#ifndef __SENSIBLE_MODIFIERS__
-#define nosave static
-#define protected static
-#endif
-
 #include <globals.h>
 void create()
 {

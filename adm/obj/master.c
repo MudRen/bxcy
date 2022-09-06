@@ -3,10 +3,6 @@
 //
 // change by Fan@wanxia
 
-#ifndef __SENSIBLE_MODIFIERS__
-#define nosave static
-#define protected static
-#endif
 #define TOMUD_PORT 8888
 
 #include <runtime_config.h>
@@ -37,7 +33,7 @@ object connect(int port)
 {
     object login_ob;
     mixed err;
-   
+
     err = catch(login_ob = new(get_player_fname()));
 
     if (err) {
