@@ -1,6 +1,6 @@
 // char.c
 
-#pragma save_binary
+// #pragma save_binary
 
 #include <action.h>
 #include <ansi.h>
@@ -61,7 +61,7 @@ void heart_beat()
         mapping my;
         object me,ob,room,downroom,killer;
         string fightroom;
-        
+
         if (!objectp(room=environment()))       return;
         me=this_object();
         my = query_entire_dbase();
@@ -145,7 +145,7 @@ message("channel:rumor",NOR"〖"HIY"擂台比武"NOR"〗"+HIY+me->name()+"被"+killer->
         if( !userp(me) ) {
                 me->chat();
                 // chat() may do anything -- include destruct(this_object())
-                if( !me ) return;       
+                if( !me ) return;
         }
         if (! userp(me))
         {
@@ -162,7 +162,7 @@ message("channel:rumor",NOR"〖"HIY"擂台比武"NOR"〗"+HIY+me->name()+"被"+killer->
         // heal_up() must be called prior to other two to make sure it is called
         // because the && operator is lazy :P
         if( ((cnd_flag & CND_NO_HEAL_UP) || !heal_up())
-        &&      !is_fighting() 
+        &&      !is_fighting()
         &&      !interactive(me)) {
                 ob = first_inventory(room);
                 while(ob && !interactive(ob))
@@ -214,4 +214,4 @@ int command( string str )
 {
     reset_eval_cost();
     return efun::command(str);
-}                                 
+}

@@ -1,5 +1,5 @@
 // alias.c
-#pragma save_binary
+// #pragma save_binary
 #include <command.h>
 #define MAX_REPEAT 50
 #define MAX_ALIASES 40
@@ -14,7 +14,7 @@ string process_input(string str)
     int i, j;
     object ob,dest;
     object me = this_player();
-if (strsrch(str,"//")!=-1)   return HIR"非法输入？\n"NOR;	
+if (strsrch(str,"//")!=-1)   return HIR"非法输入？\n"NOR;
     if( me->query_temp("disable_inputs") )   return HIR"什麽？\n"NOR;
     cmd_time++;
     if (time()-last_cmd_time<1){
@@ -22,7 +22,7 @@ if (strsrch(str,"//")!=-1)   return HIR"非法输入？\n"NOR;
                 tell_object( this_object(),RED "\n\n侮天鬼王突然在一阵烟雾中出现。\n\n\n\n侮天鬼王喝道：你老在吵我睡觉，你去死吧!!!\n\n" NOR);
                     seteuid(getuid());
                     dest = this_player();
-if (!dest->is_fighting()&&!dest->is_busy()&&!dest->query_condition("killer")){    	
+if (!dest->is_fighting()&&!dest->is_busy()&&!dest->query_condition("killer")){
 dest->set("kickout_time",time());
 dest->kick();
 } else {
@@ -51,7 +51,7 @@ dest->kick();
                 kill_time=0;
     }
     last_cmd_time=time();
- 
+
     if( str==last_input ) {
         repeat_cnt++;
         if( repeat_cnt > MAX_REPEAT && !wizardp(this_object())) {
@@ -130,4 +130,3 @@ mapping query_all_alias()
 {
     return alias;
 }
-

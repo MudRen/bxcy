@@ -1,7 +1,7 @@
 // move.c
 
 #pragma optimize
-#pragma save_binary
+// #pragma save_binary
 
 #include <ansi.h>
 #include <dbase.h>
@@ -266,7 +266,7 @@ void remove(string euid)
 		if (ob->is_character() && ob->query_temp("handing") == me)
 			// remove handing when destruct the object
 			ob->delete_temp("handing");
-		
+
 		//Add By JackyBoy@TOMUD      2001/5/27
 		if(userp(ob))
 			tell_object(ob,REM1(me) ); //如果是从玩家身上移动走，则应该是REM1

@@ -1,5 +1,5 @@
 //  equip.c
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 #include <weapon.h>
 int wear()
@@ -59,7 +59,7 @@ int wield()
         // If we are are using any weapon?
         if( !(old_weapon = owner->query_temp("weapon")) )
             owner->set_temp("weapon", this_object());
-        else // If we still have a free hand? 
+        else // If we still have a free hand?
         if( !owner->query_temp("secondary_weapon")
         &&  !owner->query_temp("armor/shield") ) {
             // If we can wield this as secondary weapon?
@@ -105,7 +105,7 @@ int unequip()
             owner->delete_temp("secondary_weapon");
         prop = query("weapon_prop");
         owner->reset_action();
-        
+
     } else if( equipped=="worn" ) {
         owner->delete_temp("armor/" + query("armor_type") );
         prop = query("armor_prop");
@@ -116,7 +116,6 @@ int unequip()
         // To support array apply, we cannot add_temp() here.
         applied_prop[apply[i]] -= prop[apply[i]];
     delete("equipped");
-    
+
     return 1;
 }
-

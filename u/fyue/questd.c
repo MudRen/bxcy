@@ -1,6 +1,6 @@
 #include <ansi.h>
 #include <command.h>
-#pragma save_binary
+// #pragma save_binary
 
 string *quests;
 string *roomlines;
@@ -20,11 +20,11 @@ void create()
    string file,dir,name;
    string* buf1;
    int i,size;
-        
+
    maps=([]);
    file = read_file("/d/obj/quest/dynamic_location");
    roomlines = explode(file,"\n");
-   file = read_file("/d/obj/quest/dynamic_quest");      
+   file = read_file("/d/obj/quest/dynamic_quest");
    quests = explode(file,"\n");
    file = read_file("/cmds/std/find.map");
    buf1 = explode(file,"\n");
@@ -55,14 +55,14 @@ int quest_reward(object me, object who,object quest_item)
         me->add("potential",pot);
   tell_object(me, sprintf("你获得了"HIR"%s"NOR"的经验值 ,"HIY"%s"NOR"点潜能！\n"NOR, chinese_number(exp),chinese_number(pot)) );
 CHANNEL_D->do_channel(this_object(),"rumor",sprintf(HIG+me->name()+NOR"将寻到的"HIW+quest_item->name()+NOR"送给"+who->name()+"获得"HIR+chinese_number(exp)+NOR"的经验，"HIY+chinese_number(pot)+NOR"点潜能\n"));
-         score=me->query_temp("dynamic_find");        
+         score=me->query_temp("dynamic_find");
                         if(score+1==10){
             me->delete_temp("dynamic_find");
             me->add("combat_exp",1000);
-            tell_object(me,"你真行，你得到了"+chinese_number(1000) + "点武学经验的附加奖励！\n");        
+            tell_object(me,"你真行，你得到了"+chinese_number(1000) + "点武学经验的附加奖励！\n");
         }
         else me->set_temp("dynamic_find",score+1);
-        
+
         return 1;
 }
 
@@ -106,7 +106,7 @@ varargs int spread_quest(string quest, int hard)
         {
         tar = new(quest);
         tar->set("value",0);
-        tar->move(cur_obj);             
+        tar->move(cur_obj);
         }
 return 1;
 }
@@ -116,7 +116,7 @@ string dyn_quest_list()
         string output;
         object item;
         int i;
-        
+
    output="";
         for( i=0; i < sizeof(quests)/2; i++)
         {
@@ -184,7 +184,7 @@ int locate_quest(object me, string arg)
     object* itemlist;
     mapping exits;
     int index,i;
-    
+
 if( ! arg)
 return notify_fail("zhao <物品id>\n");
     if(present(arg,me))
@@ -192,7 +192,7 @@ return notify_fail("zhao <物品id>\n");
 
     if((index=member_array(arg,quests,0))>0)quest=quests[index-1];
     else return 1;
-    
+
     if(!already_spreaded(quest)){
         tell_object(me,HIW"藏宝图"NOR"一点反应也没有，仿佛它根本不存在这个世界上。\n");
         return 0;
@@ -211,9 +211,9 @@ return notify_fail("zhao <物品id>\n");
                 msg+=exlst[sizeof(exlst)-1]+"出口的地方。\n";
                 tell_object(me,HIW"藏宝图"NOR"显示：\n"+msg);
                 return 1;
-          }    
+          }
       }
-    }   
+    }
     tell_object(me,HIW"藏宝图"NOR"一点反应也没有。\n");
     return 1;
 }
@@ -222,7 +222,7 @@ string query_city(object loc)
 {
         string filename,filename1;
         int len;
-        
+
         filename=file_name(loc);
         len=strlen(filename);
         if(len<2) return "???";
@@ -234,5 +234,5 @@ string query_city(object loc)
         if(len<2) return "???";
 
         filename1=filename[1..(len-1)];
-        return maps[filename1]; 
+        return maps[filename1];
 }

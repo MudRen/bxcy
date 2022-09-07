@@ -1,5 +1,5 @@
 // npc.c
-#pragma save_binary
+// #pragma save_binary
 #include <command.h>
 inherit CHARACTER;
 inherit F_CLEAN_UP;
@@ -11,7 +11,7 @@ int  exert_function(string func);
 object carry_object(string file)
 {
     object ob,obj;
-    if( !objectp(ob = new(file)) ) return 0;    
+    if( !objectp(ob = new(file)) ) return 0;
     if (obj=present(ob->query("id"), this_object())){
         destruct(ob);
         return obj;
@@ -238,7 +238,7 @@ int exert_function(string func)
 
         return SKILL_D("force")->exert_function(this_object(), func);
 }
-// Default chat function: Let the npc perform special action with 
+// Default chat function: Let the npc perform special action with
 // his/her enabled martial art
 int perform_action(string action)
 {
@@ -249,7 +249,7 @@ int perform_action(string action)
         return 0;
     martial_skill = query_skill_mapped(martial_skill);
     if( stringp(martial_skill) )
-        return SKILL_D(martial_skill)->perform_action(this_object(), act);      
+        return SKILL_D(martial_skill)->perform_action(this_object(), act);
 }
 void attempt_apprentice(object ob)
 {

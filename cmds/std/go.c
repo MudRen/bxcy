@@ -1,5 +1,5 @@
 // go.c
-#pragma save_binary
+// #pragma save_binary
 inherit F_CLEAN_UP;
 
 mapping default_dirs = ([
@@ -35,7 +35,7 @@ int main(object me, string arg)
 
 
 	mapping exit;
-       
+
 
         eq = me->query("eff_qi");
 	mq = me->query("max_qi");
@@ -43,7 +43,7 @@ int main(object me, string arg)
 	m_jing = me->query("max_jing");
 	reset_eval_cost();
 	if( !arg ) return notify_fail("你要往哪个方向走？\n");
-		
+
 	if(me->is_ghost()&&domain_file(base_name(environment(me)))!="death")
 		{
 			tell_object( me,RED "\n\n侮天鬼王突然在一阵烟雾中出现。\n\n"
@@ -82,7 +82,7 @@ int main(object me, string arg)
 
 
 	dest = exit[ arg ];
-	
+
 	if( !(obj = load_object(dest)) )
 	{
 	   if(file_size(file_name(environment(me))+".c")>0)
@@ -90,19 +90,19 @@ int main(object me, string arg)
 	   message("channel:wiz",HIG"\n〖地图精灵〗 区域："+environment(me)->query("short")+"("+file_name(environment(me))+")"+"连接有错，请速更正。\n\n"NOR,users());
 	   log_file("map_error","区域："+environment(me)->query("short")+"("+file_name(environment(me))+")"+"连接有错，请速更正。\n");
 	   }
-           write( "你要去的区域还没有连通,请通知管理人员。\n"); 
+           write( "你要去的区域还没有连通,请通知管理人员。\n");
            return 1;
-        }  
+        }
            if ( !(obj = find_object(dest)) )
-	    	return notify_fail( sprintf( "无法向 %s 移动。\n", dest ) ); 	
+	    	return notify_fail( sprintf( "无法向 %s 移动。\n", dest ) );
 	obj1 = find_object(dest);
-	
+
 	if(obj1->query("wiz_only")&&!wizardp(me))
 	   return notify_fail("那里只有管理人员才能进去！\n");
 	if(obj1->query("building"))
 	   return notify_fail("那里还在施工，请以后再来。\n");
-	
-	
+
+
 	if( !env->valid_leave(me, arg) ) return 0;
 	if( !undefinedp(default_dirs[arg]) )
 		dir = default_dirs[arg];
@@ -120,7 +120,7 @@ int main(object me, string arg)
               }
 // end of part
          else {
-		face="的";         	
+		face="的";
                 if( me->query("gender") == "女性") {
 //			mout = "一条倩影往" + dir + "离开。\n";
 //			min = "一条倩影走了过来。\n";
@@ -167,9 +167,9 @@ int main(object me, string arg)
 				mout = me->name()+"骑着"+me->query_temp("is_riding")+"向" + dir + "疾驰而去。\n";
 				min = face + me->name() + thing_msg + "骑着"+me->query_temp("is_riding")+"一路疾驰而来。\n";
 			}
-	
+
 			else if(100*jing/m_jing<=20)
-			{   
+			{
 				mout = me->name()+"摇摇晃晃的向"+dir+"走去，眼看就要倒下。\n";
 				min = me->name()+"摇摇晃晃的走了过来，就快累得趴下了。\n";
 			}
@@ -201,7 +201,7 @@ int main(object me, string arg)
                          else if(100*eq/mq<=90 )
                          {
                                 mout = face+me->name()+"灰头土脸、狼狈不堪地向"+dir+"离去。\n";
-                                 min = me->name()+thing_msg+"灰头土脸、狼狈不堪地走了过来。\n";  
+                                 min = me->name()+thing_msg+"灰头土脸、狼狈不堪地走了过来。\n";
                           }
                           else if(100*eq/mq<=95)
                           {
@@ -218,9 +218,9 @@ int main(object me, string arg)
 				mout = me->name() + "往" + dir + "离开。\n";
 				min = face + me->name() + thing_msg + "走了过来。\n";
 			}
-		}		
+		}
 	}
-	
+
 	message( "vision", mout, environment(me), ({me}) );
 	if( me->move(obj) ) {
 		me->remove_all_enemy();
@@ -250,12 +250,10 @@ int help(object me)
 {
 	write(@HELP
 指令格式 : go <方向>
- 
+
 让你往指定的方向移动。
- 
+
 HELP
     );
     return 1;
 }
-
-

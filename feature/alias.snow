@@ -1,5 +1,5 @@
 // alias.c
-#pragma save_binary
+// #pragma save_binary
 #include <command.h>
 #define MAX_REPEAT 50
 #define MAX_ALIASES 40
@@ -31,7 +31,7 @@ string process_input(string str)
                     dest->kill_ob(ob);
                     cmd_time=0;
                     kill_time=0;
-                   
+
             } else if(kill_time>4){
             	       cmd_time=0;
             	       kill_time=0;
@@ -50,7 +50,7 @@ string process_input(string str)
                 tell_object( this_object(),RED "\n\n侮天鬼王突然在一阵烟雾中出现。\n\n\n\n侮天鬼王喝道：你再这样吵我睡觉，我就不客气了!!!\n\n" NOR );
                 cmd_time=0;
                 ready_faint++;
-             
+
         }}
         else  {
         cmd_time=0;
@@ -60,7 +60,7 @@ string process_input(string str)
                 kill_time=0;
     }
     last_cmd_time=time();
- 
+
     if( str==last_input ) {
         repeat_cnt++;
         if( repeat_cnt > MAX_REPEAT && !wizardp(this_object())) {
@@ -135,4 +135,3 @@ mapping query_all_alias()
 {
     return alias;
 }
-

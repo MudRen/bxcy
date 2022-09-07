@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 #include <login.h>
 int prevent_learn(object me, string skill)

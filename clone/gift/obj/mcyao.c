@@ -1,5 +1,5 @@
-#pragma save_binary
- 
+// #pragma save_binary
+
 // poison_dust.c
 
 #include <ansi.h>
@@ -19,7 +19,7 @@ void create()
         set("task",1);
 		set("base_unit", "份");
 		set("base_weight", 30);
-        set("no_put_in",1); 
+        set("no_put_in",1);
 	}
 	set_amount(1);
 }
@@ -48,7 +48,7 @@ int do_pour(string arg)
 	f = (: call_other, __FILE__, "drink_drug" :);
 	ob->set("liquid/drink_func", bind(f, ob));
 	ob->add("liquid/slumber_effect", 150);
-	message_vision("$N将一些" + name() + "倒进" + ob->name() 
+	message_vision("$N将一些" + name() + "倒进" + ob->name()
 		+ "，摇晃了几下。\n", this_player());
 	add_amount(-1);
 	return 1;
@@ -57,9 +57,7 @@ int do_pour(string arg)
 int drink_drug(object ob)
 {
 	this_player()->apply_condition("slumber_drug",
-		(int)this_player()->query_condition("slumber_drug") 
+		(int)this_player()->query_condition("slumber_drug")
 		+ (int)ob->query("liquid/slumber_effect") );
 	return 0;
 }
-
-

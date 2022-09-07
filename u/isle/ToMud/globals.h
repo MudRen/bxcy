@@ -1,7 +1,7 @@
 // globals.h
 // this file will be automatically included by the driver
 
-#pragma save_binary
+// #pragma save_binary
 
 #ifndef __SENSIBLE_MODIFIERS__
 #define nosave static
@@ -129,10 +129,10 @@
 #define ROOM            "/inherit/room/room"
 #define SHAOLIN_SKILL   "/inherit/skill/shaolin"
 #define SKILL           "/inherit/skill/skill"
-#define SMITH           "/inherit/char/smith" 
+#define SMITH           "/inherit/char/smith"
 #define WORM            "/inherit/char/worm"
 #define SNAKE           "/inherit/char/snake"
-#define WAREHOUSE       "/inherit/room/warehouse" 
+#define WAREHOUSE       "/inherit/room/warehouse"
 
 // User IDs
 #define ROOT_UID        "Root"
@@ -191,7 +191,7 @@
 
 // Profiling switches
 //
-// If you changed any of these defines, you'll need reboot to make it 
+// If you changed any of these defines, you'll need reboot to make it
 // in effect.
 
 #include "tomud.h"

@@ -1,5 +1,5 @@
 
-#pragma save_binary
+// #pragma save_binary
 
 #include <dbase.h>
 #include <room.h>
@@ -150,18 +150,18 @@ env = environment();
                 if (env)
                 {
                         env->add_encumbrance(-weight());
-                        if (userp(env) && env->query_temp("tomud")) 
+                        if (userp(env) && env->query_temp("tomud"))
                                 tell_object(env, REM1(this_object())); //................REM1
-                        else 
+                        else
                         if (! living(env))
                         {
-                                users = filter_array(all_inventory(env),  
-                                                     (: (userp($1) && $1->query_temp("tomud")) :)) - 
-                                                     ({ this_object() });  
-                                if (sizeof(users) > 0) 
-                                foreach (user in users)  
-                                        tell_object(user, REM0(this_object()));                          
-                                
+                                users = filter_array(all_inventory(env),
+                                                     (: (userp($1) && $1->query_temp("tomud")) :)) -
+                                                     ({ this_object() });
+                                if (sizeof(users) > 0)
+                                foreach (user in users)
+                                        tell_object(user, REM0(this_object()));
+
                               //  tell_room(env,REM0(this_object()),this_object() );
                                 // ...............REM0
                         }
@@ -170,21 +170,21 @@ env = environment();
                 if (ob)
                 {
                         ob->add_encumbrance(weight());
-                        if ((userp(ob)|| interactive(ob)) && ob->query_temp("tomud")) 
-                                tell_object(ob, ADD1(this_object()) ); 
+                        if ((userp(ob)|| interactive(ob)) && ob->query_temp("tomud"))
+                                tell_object(ob, ADD1(this_object()) );
                                 // ...............ADD1
-                        else 
-                        if (! ob->is_character()) 
+                        else
+                        if (! ob->is_character())
                         {
-                                users = filter_array(all_inventory(ob),  
-                                                     (: (userp($1) && $1->query_temp("tomud")) :)) - 
-                                                     ({ this_object() });  
-                                if (sizeof(users) > 0) 
-                                foreach (user in users)  
-                                        tell_object(user, ADD0(this_object()));    
+                                users = filter_array(all_inventory(ob),
+                                                     (: (userp($1) && $1->query_temp("tomud")) :)) -
+                                                     ({ this_object() });
+                                if (sizeof(users) > 0)
+                                foreach (user in users)
+                                        tell_object(user, ADD0(this_object()));
                                // tell_room(ob, ADD0(this_object()),this_object() );
-                                // ..............ADD0         
-                        }  
+                                // ..............ADD0
+                        }
                 }
         }
 
@@ -313,16 +313,16 @@ void remove(string euid)
     {
 		if (userp(ob) && ob->query_temp("tomud"))
 			tell_object(ob, REM1(me) ); //如果是从玩家身上移动走，则应该是REM1
-		else 
+		else
 		if (! living(ob) && ! ob->is_character())
 	        {
-                        users = filter_array(all_inventory(ob),  
-                                            (: (userp($1) && $1->query_temp("tomud")) :)) - 
-                                            ({ me });  
-                        if (sizeof(users) > 0) 
-                        foreach (user in users)  
-                                tell_object(user, REM0(me)); 
-                      //   tell_room(ob, REM0(me), me );//如果是从房间里移动走，则应该是REM0                         			     
+                        users = filter_array(all_inventory(ob),
+                                            (: (userp($1) && $1->query_temp("tomud")) :)) -
+                                            ({ me });
+                        if (sizeof(users) > 0)
+                        foreach (user in users)
+                                tell_object(user, REM0(me));
+                      //   tell_room(ob, REM0(me), me );//如果是从房间里移动走，则应该是REM0
 	        }
 		}
 	if (environment())

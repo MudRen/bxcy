@@ -1,5 +1,5 @@
 // name.c
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 #include <condition.h>
 nosave string *my_id;
@@ -13,7 +13,7 @@ int id(string str)
 {
     string *applied_id;
     if( pointerp(my_id) && member_array(str, my_id)!=-1 ) {
-        if( pointerp(applied_id = query_temp("apply/id")) 
+        if( pointerp(applied_id = query_temp("apply/id"))
             &&  sizeof(applied_id) ) {
                 if (this_player() && !wizardp(this_player()) )
                      return 0;
@@ -26,7 +26,7 @@ int id(string str)
 string *parse_command_id_list()
 {
 /*  string *applied_id;
-    if( pointerp(applied_id = query_temp("apply/id")) 
+    if( pointerp(applied_id = query_temp("apply/id"))
     &&  sizeof(applied_id) )
         return applied_id+my_id;
     else
@@ -36,7 +36,7 @@ string *parse_command_id_list()
 varargs string name(int raw)
 {
     string str, *mask;
-    
+
     if( !raw && sizeof(mask = query_temp("apply/name")) )
         return mask[sizeof(mask)-1];
     else {
@@ -51,7 +51,7 @@ varargs string short(int raw)
     mapping party;
     string party_title,title, nick,degree, str, *mask;
     int fadai;
-    
+
     if( !stringp(str = query("short")) )
         str = name(raw) + "(" + capitalize(query("id")) + ")";
     if( !this_object()->is_character() ) return str;
@@ -59,12 +59,12 @@ varargs string short(int raw)
         str = sprintf("¡¸%s¡¹%s", nick, str);
     if( stringp(title = query("title")) )
         str = sprintf("%s%s%s", title,(nick?"":" "), str);
-    if ( mapp(party = query("party")) ) 
+    if ( mapp(party = query("party")) )
     {
         party_title = party["party_name"] + party["rank"];
         str=sprintf("%s %s", party_title, str);
     }
-    if ( stringp(degree = query("degree")) ) 
+    if ( stringp(degree = query("degree")) )
 		{
 			str = sprintf("%s%s%s%s%s",degree,(party_title?"":""),(title?"":""),(nick?"":" "), str);
 		}
@@ -94,7 +94,7 @@ this_object()->improve_skill("fadai-qigong",fadai);
 varargs string long(int raw)
 {
     string str, extra, *mask;
-    
+
     if( !raw && sizeof(mask = query_temp("apply/long")) )
         str = mask[sizeof(mask)-1];
     else if( !stringp(str = query("long")) )

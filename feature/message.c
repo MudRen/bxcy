@@ -1,6 +1,6 @@
 // message.c
 
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 
 #define MAX_MSG_BUFFER 500
@@ -13,7 +13,7 @@ void receive_message(string msgclass, string msg)
         int len;
         object user= this_object();
         if(!msg || (len=strlen(msg))<1) return;
-        if(len>8000) 
+        if(len>8000)
         msg=msg[0..8000]+"\n\n．．．\n";
 	if( !interactive(this_object()) ) {
 		this_object()->relay_message(msgclass, msg);
@@ -54,7 +54,7 @@ void receive_message(string msgclass, string msg)
 
 void write_prompt()
 
-{        	
+{
 	if( sizeof(msg_buffer) ) {
 		receive(BOLD +"[输入时暂存讯息]\n" + NOR);
 		for(int i=0; i<sizeof(msg_buffer); i++)

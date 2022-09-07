@@ -2,7 +2,7 @@
 // colored by ReyGod in 1/10/1997 ----- I love colorful world :)
 
 #pragma optimize
-#pragma save_binary
+// #pragma save_binary
 
 #include <room.h>
 #include <ansi.h>
@@ -152,7 +152,7 @@ int main(object me, string arg)
 
 			if (! obj)
 				return notify_fail("那里没有这样东西。\n");
-		}	
+		}
 
 		if( obj || (obj = present(arg, environment(me))) || (obj = present(arg, me)) )
 		{
@@ -189,7 +189,7 @@ int look_room(object me, object env, int brief)
 			wizardp(me)? " - " + file_name(env): "");
 	}
 
-	if (mapp(exits = env->query("exits")) && 
+	if (mapp(exits = env->query("exits")) &&
 	    (! brief || (intp(brief) && brief > 2)))
 	{
 		dirs = keys(exits);
@@ -206,7 +206,7 @@ int look_room(object me, object env, int brief)
 			str += sprintf("    这里明显的出口是 " + HIY "%s" + NOR + " 和 " + HIY + "%s" + NOR + "。\n",
 				implode(dirs[0..sizeof(dirs)-2], NOR+"、"+HIY), dirs[sizeof(dirs)-1]);
 	}
-	
+
         if (! me->query_temp("tomud")) // by Lonely
                 str += look_all_inventory_of_room(me, env, RETURN_RESULT);
         else
@@ -215,11 +215,11 @@ int look_room(object me, object env, int brief)
 	        str +=CLEAN0+ look_all_inventory_of_room(me, env, RETURN_RESULT);
         }
 	tell_object(me, str);
-	
+
         // 以下部分为显示地图
         if (me->query("env/show_map") && ! me->is_fighting())
         {
-                if (mapp(exits = env->query("exits"))) 
+                if (mapp(exits = env->query("exits")))
                 {
                         dirs = keys(exits);
                         for(i=0; i<sizeof(dirs); i++)
@@ -240,10 +240,10 @@ int look_room(object me, object env, int brief)
                         write(SETDISPLAY(4, 0) + DELLINE);
                         write(SETDISPLAY(5, 0) + DELLINE);
                         write(SETDISPLAY(6, 0) + DELLINE);
-          
+
                         write(SETDISPLAY(4, 70) + HIR + filter_color(env->query("short")) + NOR);
                         for (i=0; i<sizeof(dirs); i++)
-                        switch(dirs[i])     
+                        switch(dirs[i])
                         {
                         case "north":
                                 write(SETDISPLAY(3, 72) + "│");
@@ -336,7 +336,7 @@ int look_room(object me, object env, int brief)
                                 write(SETDISPLAY(6, 80) + filter_color(room->query("short")));
                                 break;
                         }
-         
+
                         write(SETDISPLAY(1, 58) + "┏━━━━━━━━━━━━━━┓");
                         write(SETDISPLAY(2, 58) + "┃");
                         write(SETDISPLAY(3, 58) + "┃");
@@ -349,13 +349,13 @@ int look_room(object me, object env, int brief)
                         write(SETDISPLAY(4, 88) + "┃");
                         write(SETDISPLAY(5, 88) + "┃");
                         write(SETDISPLAY(6, 88) + "┃");
-          
+
                         write(REST);
                         }
                 write(TOBOT(50));
-                }               
+                }
         }
-        
+
 	return 1;
 }
 
@@ -374,7 +374,7 @@ string desc_of_objects(object *obs)
 		str = "";
 		count   = ([]);
 		unit    = ([]);
-    
+
 		for (i = 0; i < sizeof(obs); i++)
 		{
 			short_name = obs[i]->short();
@@ -386,7 +386,7 @@ string desc_of_objects(object *obs)
 			else
 				count[short_name] += 1;
 		}
-    
+
 		dk = sort_array(keys(count), 1);
 		for (i = 0; i < sizeof(dk); i++)
 		{
@@ -414,24 +414,24 @@ string look_all_inventory_of_room(object me, object env, int ret_str)
 
 	inv = all_inventory(env);
 	if (! sizeof(inv)) return str;
-	
+
 	if (me->query_temp("tomud"))
 	{
-	        foreach(ob in inv) 
-	        if (ob != me && me->visible(ob)) 
+	        foreach(ob in inv)
+	        if (ob != me && me->visible(ob))
 	                str += ADD0(ob); //By JackyBoy@XAJH 2001/5/6
         }
-	
-	if (! me->query("env/brief") || (intp(me->query("env/brief")) && 
+
+	if (! me->query("env/brief") || (intp(me->query("env/brief")) &&
 	    me->query("env/brief") > 1))
 	{
 		obs = filter_array(inv, (: $(me) != $1 && userp($1) && $(me)->visible($1) :));
 		str += desc_of_objects(obs);
-	
+
 		obs = filter_array(inv, (: $(me) != $1 && ! userp($1) && $1->is_character() &&
 					   $(me)->visible($1) :));
 		str += desc_of_objects(obs);
-	
+
 		obs = filter_array(inv, (: ! $1->is_character() :), me);
 		str += desc_of_objects(obs);
 	}
@@ -614,7 +614,7 @@ string look_equiped(object me, object obj, string pro)
 	}
 
 	/*if (playerp(obj) && ! objectp(obj->query_temp("armor/cloth")))*/
-       if (!obj->query_temp("armor/cloth") && obj->query("race")=="人类" ) 
+       if (!obj->query_temp("armor/cloth") && obj->query("race")=="人类" )
 	{
 		str = pro + "身上没有穿衣服啊！\n" + str;
 	}
@@ -671,7 +671,7 @@ int look_living(object me, object obj)
 	mapping my_fam, fam;
 	int me_shen, obj_shen;
 	mixed tmp;
-	
+
 	if( (tmp = obj->query("icon")))
 	{
 		if( intp(tmp) )
@@ -701,7 +701,7 @@ int look_living(object me, object obj)
 	{
 		message("vision", me->name() + "正盯著你看，不知道在打什么主意。\n", obj);
 		message("vision", me->name() + "盯着" + obj->name() +
-			"看了一会儿，不知道在打什么主意。\n", 
+			"看了一会儿，不知道在打什么主意。\n",
 			environment(me), ({ me, obj }));
 	}
 
@@ -785,8 +785,8 @@ int look_living(object me, object obj)
                 str += sprintf("%s是江湖上%s的%s。\n", pro,
                                obj->query("bunch/bunch_name"),
                                stringp(obj->query("bunch/title")) ? obj->query("bunch/title") : "帮众");
-        } 
-                
+        }
+
 	// If we both has family, check if we have any relations.
 	if (obj != me &&
 	    mapp(fam = obj->query("family")) &&
@@ -919,4 +919,3 @@ HELP
 );
 	return 1;
 }
-

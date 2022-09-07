@@ -1,10 +1,10 @@
-#pragma save_binary
- 
+// #pragma save_binary
+
 #include <weapon.h>
 #include <ansi.h>
 inherit SWORD;
 void create()
-{  
+{
         set_name( CYN"玉箫" NOR,({ "yu_xiao" }));
         set_weight(10000);
         if( clonep() )
@@ -18,11 +18,11 @@ void create()
         set("wield_msg", "$N从怀里摸出一只$n作为武器。\n");
         set("unwield_msg", "$N将手中的$n放入怀里。\n");
         set("owner","令狐冲");
-		set("task",1);	
+		set("task",1);
         set("no_put_in",1);
             }
-init_sword(250,2);	
+init_sword(250,2);
         setup();
 }
 
-int query_autoload() { return 1; }	
+int query_autoload() { return 1; }

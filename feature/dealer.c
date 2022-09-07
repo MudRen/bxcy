@@ -3,7 +3,7 @@
 // Each dealer should support buy, sell, list, value
 // pawn,redeem,check 7 commands
 
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 #include <ansi.h>
 string value_string(int value)
@@ -23,7 +23,7 @@ string is_vendor_good(string arg,int once)
 {
         string *goods,*all_id;
         int i,j;
-        if (goods = query("vendor_goods")) 
+        if (goods = query("vendor_goods"))
         for (i = 0; i < sizeof(goods); i++){
             if (!all_id=goods[i]->parse_command_id_list())
                 return "";
@@ -92,7 +92,7 @@ int do_value(string arg)
     {
         printf("%s一文不值。\n", ob->query("name"));
         return 1;
-    }else 
+    }else
         if (!amount=ob->query_amount()) amount=1;
         value*=amount;
         if (value<100)
@@ -113,7 +113,7 @@ int do_pawn(string arg)
     int value;
     int amount;
         if (!living(this_object())) return 0;
-        if ( (fam=this_player()->query("family")) && fam["family_name"] == "丐帮" ) 
+        if ( (fam=this_player()->query("family")) && fam["family_name"] == "丐帮" )
         return notify_fail("你是个穷叫化，当什麽东西！\n");
     if( !arg || !(ob = present(arg, this_player())) )
         return notify_fail("你要典当什麽物品？\n");
@@ -342,7 +342,7 @@ int do_list()
             );
                 }
     return 1;
-}       
+}
 int do_buy(string arg)
 {
     string items,targ;
@@ -351,25 +351,25 @@ int do_buy(string arg)
     int price, i,amount=1;
     int once=1;
         if (!living(this_object())) return 0;
-           if(NATURE_D->room_event_fun()=="event_night") 
+           if(NATURE_D->room_event_fun()=="event_night")
 	{
 		message_vision("$N笑着对$n说道:本店刚打烊，请明天再来吧。\n",this_object(),this_player());
 		return 1;
 	}
-     if(NATURE_D->room_event_fun()=="event_midnight") 
+     if(NATURE_D->room_event_fun()=="event_midnight")
 	{
 		message_vision("$N满脸的不耐烦对$n说道:半夜三更的，吵什么吵，天亮再来!\n", this_object(),this_player());
 		return 1;
 	}
-	if(NATURE_D->room_event_fun()=="event_dawn") 
+	if(NATURE_D->room_event_fun()=="event_dawn")
 	{
 		message_vision("$N笑着对$n说道:天就要亮了，您耐心等等吧。\n",this_object(),this_player());
 		return 1;
 	}
         dest=this_player();
     reset_eval_cost();
-      
-        if ( (fam=dest->query("family")) && fam["family_name"] == "丐帮" ) 
+
+        if ( (fam=dest->query("family")) && fam["family_name"] == "丐帮" )
         return notify_fail("你是个穷叫化，买什麽东西！\n");
         tg=present("thousand-gold_money",dest);
 

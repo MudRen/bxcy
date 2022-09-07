@@ -1,7 +1,7 @@
 // move.c
 
 #pragma optimize
-#pragma save_binary
+// #pragma save_binary
 
 #include <ansi.h>
 #include <dbase.h>
@@ -202,18 +202,18 @@ varargs int move(mixed dest, int raw)
 		if (env)
 		{
 			env->add_encumbrance(-weight());
-			if (userp(env) && env->query_temp("tomud")) 
+			if (userp(env) && env->query_temp("tomud"))
 			        tell_object(env, REM1(this_object())); //如果是从玩家身上移动走，则应该是REM1
-			else 
+			else
 			if (! living(env))
 			{
-                                users = filter_array(all_inventory(env),  
-                                                     (: (userp($1) && $1->query_temp("tomud")) :)) - 
-                                                     ({ this_object() });  
-                                if (sizeof(users) > 0) 
-                                foreach (user in users)  
-                                        tell_object(user, REM0(this_object()));                          
-			        
+                                users = filter_array(all_inventory(env),
+                                                     (: (userp($1) && $1->query_temp("tomud")) :)) -
+                                                     ({ this_object() });
+                                if (sizeof(users) > 0)
+                                foreach (user in users)
+                                        tell_object(user, REM0(this_object()));
+
 			        // tell_room(env,REM0(this_object()),this_object() );
 			        // 如果是从房间里移动走，则应该是REM0
 	                }
@@ -222,21 +222,21 @@ varargs int move(mixed dest, int raw)
 		if (ob)
 		{
 			ob->add_encumbrance(weight());
-			if ((userp(ob)|| interactive(ob)) && ob->query_temp("tomud")) 
-			        tell_object(ob, ADD1(this_object()) ); 
+			if ((userp(ob)|| interactive(ob)) && ob->query_temp("tomud"))
+			        tell_object(ob, ADD1(this_object()) );
 			        // 如果是移动到玩家身上，则应该是ADD1
-			else 
-			if (! ob->is_character()) 
+			else
+			if (! ob->is_character())
 			{
-			        users = filter_array(all_inventory(ob),  
-                                                     (: (userp($1) && $1->query_temp("tomud")) :)) - 
-                                                     ({ this_object() });  
-                                if (sizeof(users) > 0) 
-                                foreach (user in users)  
-                                        tell_object(user, ADD0(this_object()));    
+			        users = filter_array(all_inventory(ob),
+                                                     (: (userp($1) && $1->query_temp("tomud")) :)) -
+                                                     ({ this_object() });
+                                if (sizeof(users) > 0)
+                                foreach (user in users)
+                                        tell_object(user, ADD0(this_object()));
                                 // tell_room(ob, ADD0(this_object()),this_object() );
-			        // 如果是移动到房间里，则应该是ADD0         
-                        }  
+			        // 如果是移动到房间里，则应该是ADD0
+                        }
 		}
 	}
 	// Move & run INIT function
@@ -296,20 +296,20 @@ void remove(string euid)
 		if (ob->is_character() && ob->query_temp("handing") == me)
 			// remove handing when destruct the object
 			ob->delete_temp("handing");
-		
+
 		//Add By JackyBoy@TOMUD      2001/5/27
 		if (userp(ob) && ob->query_temp("tomud"))
 			tell_object(ob, REM1(me) ); //如果是从玩家身上移动走，则应该是REM1
-		else 
+		else
 		if (! living(ob) && ! ob->is_character())
 	        {
-                        users = filter_array(all_inventory(ob),  
-                                            (: (userp($1) && $1->query_temp("tomud")) :)) - 
-                                            ({ me });  
-                        if (sizeof(users) > 0) 
-                        foreach (user in users)  
-                                tell_object(user, REM0(me)); 
-                        // tell_room(ob, REM0(me), me );//如果是从房间里移动走，则应该是REM0                         			     
+                        users = filter_array(all_inventory(ob),
+                                            (: (userp($1) && $1->query_temp("tomud")) :)) -
+                                            ({ me });
+                        if (sizeof(users) > 0)
+                        foreach (user in users)
+                                tell_object(user, REM0(me));
+                        // tell_room(ob, REM0(me), me );//如果是从房间里移动走，则应该是REM0
 	        }
 
 		if (is_magic_move() && userp(ob))

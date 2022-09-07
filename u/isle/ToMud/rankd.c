@@ -2,7 +2,7 @@
 // 1996-02-15 dts ranking related to "shen"
 
 #pragma optimize
-#pragma save_binary
+// #pragma save_binary
 
 #include <ansi.h>
 
@@ -566,7 +566,7 @@ varargs string new_short( object ob ,int withshort)
                         icon = sprintf("%d",tmp);
                 else if( stringp(tmp) )
                         icon = tmp;
-                else 
+                else
                         icon = "00901";
         }
         else

@@ -1,7 +1,7 @@
 // attack.c
 // From ES2
 // Modified by Xiang for XKX (12/15/95)
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 #include <origin.h>
 #include <skill.h>
@@ -46,7 +46,7 @@ void fight_ob(object ob)
 {
     if(!ob || ob==this_object()) return;
     set_heart_beat(1);
-    if( member_array(ob, enemy)==-1 ) 
+    if( member_array(ob, enemy)==-1 )
         enemy += ({ ob });
 }
 // This function starts killing between this_object() and ob
@@ -117,9 +117,9 @@ void remove_all_enemy()
 void remove_all_killer()
 {
     killer = ({});
-    
+
     att_killer = ({});
-    
+
     enemy -= ({ 0 });
     for(int i=0; i<sizeof(enemy); i++){
         if (enemy[i]->query_leader()==this_object())
@@ -139,7 +139,7 @@ void reset_action()
     object me,ob;
     string type, skill;
         me = this_object();
-    
+
     if ( me->query_temp("secondly_weapon") ){
         if( ob=me->query_temp("secondary_weapon") ) type = ob->query("skill_type");
         else type = "unarmed";
@@ -147,7 +147,7 @@ void reset_action()
         if( ob=me->query_temp("weapon") ) type = ob->query("skill_type");
         else type = "unarmed";
     }
-    
+
     if( stringp(skill = query_skill_mapped(type)) ) {
         // If using a mapped skill, call the skill daemon.
                 if ( ob )
@@ -187,7 +187,7 @@ void init()
     // launched by auto_fight() and saves some overhead.
     if( is_fighting()
     ||  !living(this_object())
-    ||  !(ob = this_player()) 
+    ||  !(ob = this_player())
     ||  environment(ob)!=environment()
     ||  !living(ob)
     ||  ob->query("linkdead") )
@@ -210,4 +210,3 @@ void init()
         return;
     }
 }
-

@@ -1,5 +1,5 @@
-#pragma save_binary
- 
+// #pragma save_binary
+
 // bible.c
 
 inherit ITEM;

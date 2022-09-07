@@ -1,5 +1,5 @@
 // modified by snow@JHFY
-#pragma save_binary
+// #pragma save_binary
 #include <command.h>
 #include <dbase.h>
 #include <origin.h>
@@ -36,8 +36,8 @@ protected nomask int command_hook(string arg)
     &&  stringp(file = find_command("go"))
     &&  call_other(file, "main", this_object(), verb))
         ;
-    
-    else if( stringp(file = find_command(verb)) 
+
+    else if( stringp(file = find_command(verb))
     && call_other(file, "main", this_object(), arg))
         ;
     else if( EMOTE_D->do_emote( this_object(), verb, arg ) )
@@ -54,17 +54,17 @@ protected nomask int command_hook(string arg)
 }
 protected nomask void set_path(string *p)
 {
-    if( origin() != "local" && 
+    if( origin() != "local" &&
         geteuid(previous_object()) != ROOT_UID )
         return;
         path = p;
 }
-string *query_path() 
+string *query_path()
 {
      return path;
 }
 
-mixed *query_commands() 
+mixed *query_commands()
 {
      return commands();
 }
@@ -75,25 +75,25 @@ int force_me(string cmd)
         return 0;
     return command( this_object()->process_input(cmd) );
 }
-nomask void enable_player() 
+nomask void enable_player()
 {
-    if( stringp(query("id")) ) 
+    if( stringp(query("id")) )
            set_living_name(query("id"));
-    else   set_living_name(query("name")); 
-        
+    else   set_living_name(query("name"));
+
     if(this_object()->query_temp("disable_inputs"))
            this_object()->delete_temp("disable_inputs");
            enable_commands();
            add_action("command_hook", "", 1);
-    
+
     if( !userp(this_object()) )
            set_path(NPC_PATH);
       else if(query("id") == "snow"||query("id") == "fyue")
               {
               	set_path(BOS_PATH);
-              	enable_wizard(); 
+              	enable_wizard();
               }
-   else switch( wizhood(this_object()) ) 
+   else switch( wizhood(this_object()) )
    {
         case "(boss)":
 			set_path(BOS_PATH);
@@ -138,4 +138,3 @@ nomask void disable_player(string type)
         set_temp("disable_inputs",1);
         disable_commands();
 }
-

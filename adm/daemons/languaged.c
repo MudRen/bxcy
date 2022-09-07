@@ -4,7 +4,7 @@
 //
 
 
-#pragma save_binary
+// #pragma save_binary
 #pragma optimize
 //inherit F_CLEAN_UP;
 

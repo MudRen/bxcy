@@ -1,5 +1,5 @@
 // damage.c
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 #include <login.h>
 #include <move.h>
@@ -213,7 +213,7 @@ int heal_up()
  }
     if (userp(me)){
         if( my["water"] < 1 || my["food"]<1 ){
-if(wizardp(me)||me->query("age")<18){	
+if(wizardp(me)||me->query("age")<18){
         		me->set("food",(int)me->max_food_capacity());
         		me->set("water",(int)me->max_water_capacity());
         		tell_object(this_object(),HIW "一道金光过后，你又变得神采奕奕！\n" NOR);

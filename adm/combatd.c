@@ -1,5 +1,5 @@
 // combatd.c
-#pragma save_binary
+// #pragma save_binary
 #include <ansi.h>
 #include <skill.h>
 #include <weapon.h>
@@ -158,11 +158,11 @@ varargs void report_status(object ob, int effective)
 {
     if( effective )
         message_vision( "( $N" + eff_status_msg(
-            (int)ob->query("qi") * 100 / (int)ob->query("max_qi") ) 
+            (int)ob->query("qi") * 100 / (int)ob->query("max_qi") )
             + " )\n", ob);
     else
         message_vision( "( $N" + status_msg(
-            (int)ob->query("qi") * 100 / (int)ob->query("max_qi") ) 
+            (int)ob->query("qi") * 100 / (int)ob->query("max_qi") )
             + " )\n", ob);
 }
 // This function calculates the combined skill/combat_exp power of a certain
@@ -241,9 +241,9 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
     int damage, damage_bonus, defense_factor;
     int cost;
     int wounded = 0;
-    
+
     if (!living(me)) return 1;
-    
+
     my = me->query_entire_dbase();
     your = victim->query_entire_dbase();
     prepare = me->query_skill_prepare();
@@ -253,13 +253,13 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
     //
     me->delete_temp("fight");
     victim->delete_temp("fight");
-    
+
     if( objectp(weapon) )   attack_skill = weapon->query("skill_type");
     else if ( sizeof(prepare) == 0)	attack_skill = "unarmed";
     else if ( sizeof(prepare) == 1)	attack_skill = (keys(prepare))[0];
     else if ( sizeof(prepare) == 2)	attack_skill = (keys(prepare))[me->query_temp("action_flag")];
     //else attack_skill = "unarmed";
-    
+
     //
     // (1) Find out what action the offenser will take.
     //
@@ -281,31 +281,31 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
     }else if (me->query_temp("action_flag") == 0)
 		result = "\n" + action["action"] + "！\n";
 	else
-		result = "\n" + "紧跟着"+action["action"] + "!\n"; 
+		result = "\n" + "紧跟着"+action["action"] + "!\n";
 
     //
     // (2) Prepare AP, DP for checking if hit.
     //
     limbs = victim->query("limbs");
     limb = limbs[random(sizeof(limbs))];
-    
+
     // 以下可能在query_xxxx_msg中，加入招式的特殊防御,
     //比如,victim->set_temp("fight/dodge",100)
     // 因此,应该在计算前先进行调用
     dodge_skill = me->query_skill_mapped("dodge");
     if( !dodge_skill ) dodge_skill = "dodge";
-        dodge_msg = SKILL_D(dodge_skill)->query_dodge_msg(limb,me);    
+        dodge_msg = SKILL_D(dodge_skill)->query_dodge_msg(limb,me);
     dodge_skill = victim->query_skill_mapped("dodge");
     if( !dodge_skill ) dodge_skill = "dodge";
-        dodge_msg = SKILL_D(dodge_skill)->query_dodge_msg(limb,victim);    
+        dodge_msg = SKILL_D(dodge_skill)->query_dodge_msg(limb,victim);
     if (!dodge_msg || dodge_msg=="")
-        dodge_msg = SKILL_D("dodge")->query_dodge_msg(limb,victim);    
+        dodge_msg = SKILL_D("dodge")->query_dodge_msg(limb,victim);
     parry_skill = victim->query_skill_mapped("parry");
     if( !parry_skill ) parry_skill = "parry";
     parry_msg = SKILL_D(parry_skill)->query_parry_msg(victim,weapon);
     if (!parry_msg || parry_msg=="")
         parry_msg = SKILL_D("parry")->query_parry_msg(victim,weapon);
-    
+
     // --------------------------------------------------------
     // 以下增加攻击招式的特殊攻防
     if (intp(action["dodge"]))
@@ -315,7 +315,7 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
     if (intp(action["attack"]))
         me->set_temp("fight/attack", action["attack"]/10);
     // ---------------------------------------------------------
-    
+
     ap = skill_power(me, attack_skill, SKILL_USAGE_ATTACK);
     if (cost=sizeof(me->query_enemy())>1){
         me->delete_temp("fighting");
@@ -334,7 +334,7 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
         dp /=cost;
     }
     if (!victim->visible(me)) dp /= 10;
-    
+
     if( dp < 1 ) dp = 1;
     cost=skill_power(me, "dodge", SKILL_USAGE_DEFENSE);
     if (cost<1) cost=1;
@@ -459,7 +459,7 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
             result += damage_msg(damage, action["damage_type"],victim);
             damage = victim->receive_damage("qi", damage, me );
             if( random(damage) > (int)victim->query_temp("apply/armor")
-            && ( (me->is_killing(victim)) 
+            && ( (me->is_killing(victim))
                 && ((!weapon) && !random(4) || weapon && !random(2) )
                 || ( (!weapon) && !random(7) || weapon && !random(4) ) )  )
             {
@@ -488,14 +488,14 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
                     me->improve_skill(attack_skill, random(me->query_int()));
             }
         }
-    } 
+    }
     result = replace_string( result, "$l", limb );
     if( objectp(weapon) )
 		result = replace_string( result, "$w", weapon->name() );
 	else if( stringp(action["weapon"]) )
 		result = replace_string( result, "$w", action["weapon"] );
-	else if( attack_skill == "unarmed" ) 
-              result = replace_string( result, "$w", "无形劲气" );	
+	else if( attack_skill == "unarmed" )
+              result = replace_string( result, "$w", "无形劲气" );
 	else if( attack_skill == "finger" )
                 result = replace_string( result, "$w", "指间一股真气" );
         else if( attack_skill == "strike" )
@@ -520,7 +520,7 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type)
     if( damage > 0 ) {
         report_status(victim, wounded);
         if( victim->is_busy() ) victim->interrupt_me(me);
-        if( (!me->is_killing(victim)) && 
+        if( (!me->is_killing(victim)) &&
         (!victim->is_killing(me)) &&
         victim->query("qi")*2 <= victim->query("max_qi")) {
             me->remove_enemy(victim);
@@ -569,7 +569,7 @@ void fight(object me, object victim)
     if (!me->visible(victim)) return;
     if (environment(me)!=environment(victim) ) return;
 //    if (userp(me) && environment(me)->query("freeze"))  return;
-    
+
     // If victim is busy or unconcious, always take the chance to make an attack.
     if( victim->is_busy() || !living(victim) ) {
         me->set_temp("guarding", 0);
@@ -581,9 +581,9 @@ void fight(object me, object victim)
             me->delete_temp("secondly_weapon");
         }
        else if( me->is_fighting(victim) && victim->is_fighting(me)) {
-		if( (!objectp(me->query_temp("weapon")) 
+		if( (!objectp(me->query_temp("weapon"))
 		   && sizeof(me->query_skill_prepare()) > 1)
-		||  ( objectp(me->query_temp("weapon")) 
+		||  ( objectp(me->query_temp("weapon"))
 		   &&(me->query_temp("weapon"))->query("skill_type") == "sword"
 		   && me->query_skill("pixie-jian", 1) >= 60
 		   && me->query_skill_mapped("sword") == "pixie-jian") )
@@ -593,9 +593,9 @@ void fight(object me, object victim)
 		   me->set_temp("action_flag",0);
 	     	} }
 
-        
+
         if (living(victim)){
-            
+
             if(  !objectp(ob=me->query_temp("weapon")))
                 skill_name="unarmed";
             else skill_name=ob->query("skill_type");
@@ -609,14 +609,14 @@ void fight(object me, object victim)
 
    // Else, see if we are brave enough to make an aggressive action.
 
-    } else if( random( (int)victim->query_dex() * 2 ) < (int)me->query_dex() || random(10)<3) { 
+    } else if( random( (int)victim->query_dex() * 2 ) < (int)me->query_dex() || random(10)<3) {
         me->set_temp("guarding", 0);
-        if( !victim->is_fighting(me) ) victim->fight_ob(me);  
+        if( !victim->is_fighting(me) ) victim->fight_ob(me);
         do_attack(me, victim, me->query_temp("weapon"), TYPE_REGULAR);
         if( me->is_fighting(victim) && victim->is_fighting(me)) {
-		if( (!objectp(me->query_temp("weapon")) 
+		if( (!objectp(me->query_temp("weapon"))
 		   && sizeof(me->query_skill_prepare()) > 1)
-		||  ( objectp(me->query_temp("weapon")) 
+		||  ( objectp(me->query_temp("weapon"))
 		   &&(me->query_temp("weapon"))->query("skill_type") == "sword"
 		   && me->query_skill("pixie-jian", 1) >= 60
 		   && me->query_skill_mapped("sword") == "pixie-jian") )
@@ -658,7 +658,7 @@ void auto_fight(object me, object obj, string type)
     // Don't let NPC autofight NPC.
     if( !userp(me) && !userp(obj) ) return;
     // Because most of the cases that we cannot start a fight cannot be checked
-    // before we really call the kill_ob(), so we just make sure we have no 
+    // before we really call the kill_ob(), so we just make sure we have no
     // aggressive callout wating here.
     if( me->query_temp("looking_for_"+type ) ) return;
     me->set_temp("looking_for_"+type, 1);
@@ -676,7 +676,7 @@ void start_berserk(object me, object obj)
     ||  environment(me)->query("no_fight")  // Are we in a peace room?
     )   return;
     message_vision("$N用一种异样的眼神扫视著在场的每一个人。\n", me);
-    if( (shen < -50000 || sb_shen>100000) && me->query_per()>random(obj->query_per())*2 
+    if( (shen < -50000 || sb_shen>100000) && me->query_per()>random(obj->query_per())*2
     &&  !wizardp(obj) ) {
         message_vision("$N对著$n喝道：" + RANK_D->query_self_rude(me)
             + "看你实在很不顺眼，去死吧。\n", me, obj);
@@ -852,7 +852,7 @@ sprintf("官府通缉犯%s被%s就地正法，%s获得了应有的奖励!",victim->name(),killer->n
                                 victim->add("potential",((int)victim->query("learned_points") - (int)victim->query("potential"))/2 );
        }
 
-        
+
         bls = 10;
          if(objectp(killer))
                 {
@@ -877,9 +877,9 @@ sprintf("官府通缉犯%s被%s就地正法，%s获得了应有的奖励!",victim->name(),killer->n
                         }
                         msg+=die_msg[random(7)];
                 }
-		if (killer_master_id==(string)victim->query("id")) 
+		if (killer_master_id==(string)victim->query("id"))
 		CHANNEL_D->do_channel(this_object(), "rumor",sprintf("%s将自己的师傅%s杀死了,真是惨无人道啊。", killer->name(0),victim->name(1)));
-		else	
+		else
 		CHANNEL_D->do_channel(this_object(), "rumor",
 			sprintf("听说%s"+msg, victim->name(1)));
 
@@ -894,7 +894,7 @@ sprintf("官府通缉犯%s被%s就地正法，%s获得了应有的奖励!",victim->name(),killer->n
 		killer->delete_temp("pker_time");
 	}
         killer->add_temp("pker_time",1);
- 
+
          CHANNEL_D->do_channel(this_object(), "rumor",
                                 sprintf("官府开始捉拿%s,并奖励将杀人犯就地正法之江湖好汉。", killer->name(0)));
         victim->add("combat_exp", -(int)victim->query("combat_exp") / 15);
@@ -903,7 +903,7 @@ sprintf("官府通缉犯%s被%s就地正法，%s获得了应有的奖励!",victim->name(),killer->n
         killer->add("MKS", 1);
         bls = 1;
     }
-    if (killer_master_id==(string)victim->query("id") && !userp(victim)) 
+    if (killer_master_id==(string)victim->query("id") && !userp(victim))
 		CHANNEL_D->do_channel(this_object(), "rumor",sprintf("%s将自己的师傅%s杀死了,真是惨无人道啊。", killer->name(0),victim->name(1)));
     if (!killer->is_ghost())
     killer->add("shen", -(int)victim->query("shen") / 10);
@@ -933,6 +933,6 @@ sprintf("官府通缉犯%s被%s就地正法，%s获得了应有的奖励!",victim->name(),killer->n
                 killer->delete("class");
                 CHANNEL_D->do_channel(victim, "chat",
                 sprintf("%s，你谋害自己的师傅，为我佛门所不容，你走吧！", killer->name(1)));
-        }           
+        }
     }
 }

@@ -1,5 +1,5 @@
-#pragma save_binary
- 
+// #pragma save_binary
+
 // bible.c
 
 inherit ITEM;
@@ -32,4 +32,4 @@ void create()
 	}
 	setup();
 }
-int query_autoload() { return 1; }	
+int query_autoload() { return 1; }

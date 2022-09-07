@@ -1,7 +1,7 @@
 // ----/cmds/skill/practice.c ----
 
 // practice.c
-#pragma save_binary
+// #pragma save_binary
 int help(object me);
 inherit F_CLEAN_UP;
 int main(object me, string arg)
@@ -55,4 +55,3 @@ TEXT
         );
         return 1;
 }
-

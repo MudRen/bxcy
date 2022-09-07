@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 #include <room.h>
 nosave int weight = 0;
@@ -152,7 +152,7 @@ if(!wizardp(this_object())||!query("env/invisible"))
                         obj = next_inventory(obj);
                         continue;
                     }
-                    if (obj->query("money_id") 
+                    if (obj->query("money_id")
                         || !obj->query("unit")
                         || obj->is_character()){
                         str+=sprintf("    %s\n",obj->short());

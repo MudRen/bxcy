@@ -1,7 +1,7 @@
 // file:            Autosave daemon
 // for autosave players data file.
 
-#pragma save_binary
+// #pragma save_binary
 void autosave(int i)
 {
 
@@ -24,7 +24,7 @@ void autosave(int i)
     call_out("autosave",1,i+5);
 }
 void auto_save();
- 
+
 void create()
 {
         seteuid(ROOT_UID);
@@ -46,6 +46,3 @@ void auto_save()
         remove_call_out("auto_save");
 call_out("auto_save", 600);
 }
-
-
-

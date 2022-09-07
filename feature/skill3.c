@@ -1,7 +1,7 @@
 // skill.c
 // From ES2
 // Modified by Fan (04/08/1998)
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 mapping skills;
 mapping learned;
@@ -29,14 +29,14 @@ int delete_skill(string skill)
     if( mapp(skills) ) {
         map_delete(skills, skill);
         if (mapp(skill_map)){
-                 
+
             skl=keys(skill_map);
             for (i=0;i<sizeof(skl);i++)
                 if (skill_map[skl[i]]==skill || skl[i]==skill )
                     map_delete(skill_map, skl[i]);
         }
         if (mapp(skill_prepare)){
-                 
+
             skl=keys(skill_prepare);
             for (i=0;i<sizeof(skl);i++)
                 if (skill_prepare[skl[i]]==skill || skl[i]==skill)
@@ -63,7 +63,7 @@ varargs void map_skill(string skill, string mapped_to)
         error("F_SKILL: No such skill (" + skill + ")\n");
     if( !mapp(skills) || undefinedp(skills[mapped_to]) )
         return;
-        
+
     if( !mapp(skill_map) ) skill_map = ([ skill: mapped_to ]);
     else skill_map[skill] = mapped_to;
 }
@@ -80,7 +80,7 @@ varargs void prepare_skill(string skill, string mapped_to)
         error("F_SKILL: No such skill (" + skill + ")\n");
     if( !mapp(skills) || undefinedp(skills[mapped_to]) )
         return;
-        
+
     if( !mapp(skill_prepare) ) skill_prepare = ([ skill: mapped_to ]);
     else skill_prepare[skill] = mapped_to;
 }
@@ -100,7 +100,7 @@ varargs int query_skill(string skill, int raw)
 {
     if( !raw ) {
         int s;
-        
+
         s = query_temp("apply/" + skill);
         if( mapp(skills) ) {
             s += skills[skill] / 2;

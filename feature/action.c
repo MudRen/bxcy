@@ -1,5 +1,5 @@
 // action.c
-#pragma save_binary
+// #pragma save_binary
 #include <function.h>
 nosave mixed busy, interrupt;
 varargs void start_busy(mixed new_busy, mixed new_interrupt)
@@ -55,7 +55,7 @@ void interrupt_me(object who, string how)
 // such recovery function call_out might be destroyed if some wizard
 // destructed the object that is reponsible of it, so we let users launch
 // the call_out themself. Thus we can make sure the recovery call_out.
-// 
+//
 // Because this could cause a serious security problem, so we need highest
 // security check here.
 int start_call_out(function fun, int delay)

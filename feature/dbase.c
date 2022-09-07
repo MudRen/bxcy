@@ -1,5 +1,5 @@
 // dbase.c
-#pragma save_binary
+// #pragma save_binary
 #include <dbase.h>
 inherit F_TREEMAP;
 mapping dbase;
@@ -76,7 +76,7 @@ varargs mixed query_temp(string prop, int raw)
         data = tmp_dbase[prop];
     if( functionp(data) && !raw )
         return (*data)( this_object() );
-    else 
+    else
         return data;
 }
 int delete_temp(string prop)
@@ -102,4 +102,3 @@ mapping query_entire_temp_dbase()
 {
     return tmp_dbase;
 }
-

@@ -1,7 +1,7 @@
 // rankd.c
 // 1996-02-15 dts ranking related to "shen"
 //modified by macrohard@sdyx
-#pragma save_binary
+// #pragma save_binary
 
 string query_rank(object ob)
 {
@@ -9,19 +9,19 @@ string query_rank(object ob)
         int shen,exp;
         int budd;
         string set_title,menpai;
-        
+
         exp = (int)ob->query("combat_exp");
         menpai=ob->query("family/family_name");
         shen = ob->query("shen");
         if(wizardp(ob)&&ob->query("env/own_rank"))
-               return NOR"【"HIW+ob->query("env/own_rank")+NOR" 】"; 
-        if( ob->is_ghost() ) 
+               return NOR"【"HIW+ob->query("env/own_rank")+NOR" 】";
+        if( ob->is_ghost() )
                 return NOR "【"HIB"孤魂野鬼"NOR"】";
 
 
-        if ( (fam = ob->query("family")) && fam["family_name"] == "少林派" ) 
+        if ( (fam = ob->query("family")) && fam["family_name"] == "少林派" )
                 budd = ob->query_skill("buddhism",1);
-        
+
         if( (int) ob->query("fight_rank") == 1 )
 	{
 		if( strlen((string) ob->query("env/my_title")) ==2)
@@ -29,7 +29,7 @@ string query_rank(object ob)
 		          set_title = ob->query("env/my_title");
 		          return NOR"【"HIW"天下第一"+set_title+NOR" 】";
 		      }
-		else 
+		else
 		          return NOR"【"HIW"天下第一"NOR"】";
 	}
         if( (int) ob->query("fight_rank") == 2 )
@@ -39,7 +39,7 @@ string query_rank(object ob)
                           set_title = ob->query("env/my_title");
                           return NOR"【"HIR"天下第二"+set_title+NOR" 】";
                       }
-                else 
+                else
                           return NOR"【"HIR"天下第二"NOR"】";
 	}
         if( (int) ob->query("fight_rank") == 3)
@@ -49,26 +49,26 @@ string query_rank(object ob)
                           set_title = ob->query("env/title_race");
                           return NOR"【"HIG"天下第三"+ set_title +NOR" 】";
                      }
-                else 
+                else
                           return NOR"【"HIG"天下第三"NOR"】";
 	}
-        
+
         switch(ob->query("gender")) {
         case "女性":
                 switch(wizhood(ob)) {
-                case "(admin)": 
-                        return NOR "【"HIW"九天玄女"NOR"】";       
-                case "(arch)":          
+                case "(admin)":
+                        return NOR "【"HIW"九天玄女"NOR"】";
+                case "(arch)":
                         return NOR "【"MAG"紫衣神女"NOR"】";
-                case "(wizard)":        
+                case "(wizard)":
                         return NOR "【"HIC"瑶池仙女"NOR"】";
-                case "(apprentice)":    
+                case "(apprentice)":
                         return NOR "【"GRN"瑶池侍女"NOR"】";
-                case "(immortal)":      
+                case "(immortal)":
                         return NOR "【"CYN"梦幻精灵"NOR"】";
                 default:
                         if( ((int)ob->query("PKS") > 30) )
-                                return  "【"HIB"饮血女魔"NOR"】";    
+                                return  "【"HIB"饮血女魔"NOR"】";
                         else if (shen >= 1000000)
                                 return  "【"HIC"一代天娇"NOR"】";
                         else if (shen >= 500000)
@@ -93,8 +93,8 @@ string query_rank(object ob)
                                 return  "【"RED"女 少 魔"NOR"】" ;
                         else if (shen <= -5000)
                                 return  "【"CYN"刁蛮恶女"NOR"】" ;
-                        else if( (int)ob->query("thief") > 10 ) 
-                                return  "【"HIW"女 惯 窃"NOR"】";    
+                        else if( (int)ob->query("thief") > 10 )
+                                return  "【"HIW"女 惯 窃"NOR"】";
                         else
                         switch(menpai) {
 					case "武当派":
@@ -133,7 +133,7 @@ string query_rank(object ob)
 								return NOR "【"HIR"女 剑 圣"NOR"】";
 							else
 								return NOR "【"HIM"女 剑 魔"NOR"】";
-							}	
+							}
 						if (exp>1000000) {
 							if (shen >= 0)
 								return NOR "【"GRN"女 剑 仙"NOR"】";
@@ -182,7 +182,7 @@ string query_rank(object ob)
 								return NOR "【"HIR"魔 见 愁"NOR"】";
 							else
 								return NOR "【"HIR" 狂  魔 "NOR"】";
-							}	
+							}
 						if (exp>5000000)
 								return NOR "【"HIM"隐世侠女"NOR"】";
 						if (exp>1000000)
@@ -223,50 +223,50 @@ string query_rank(object ob)
 						return "【  教  众  】" ;
                                       default:
                         switch(ob->query("class")) {
-                        case "bonze":   
+                        case "bonze":
                                 return "【 女  尼 】";
-                        case "yishi":   
+                        case "yishi":
                                 return "【女 义 士】";
-                        case "taoist":  
-                                return "【 女  冠 】";                               
-                        case "bandit":  
+                        case "taoist":
+                                return "【 女  冠 】";
+                        case "bandit":
                                 return "【女 飞 贼】";
-                       case "dancer":  
-                                return "【绝色舞姬】";                                 
-                        case "scholar": 
-                                return "【遥遥佳人】";                  
-                        case "officer": 
+                       case "dancer":
+                                return "【绝色舞姬】";
+                        case "scholar":
+                                return "【遥遥佳人】";
+                        case "officer":
                                 return "【 女  差 】";
-                        case "fighter": 
-                                return "【风尘女子】";                    
-                        case "swordsman":       
-                                return "【舞剑少女】";                    
-                        case "alchemist":       
-                                return "【女 方 士】";                   
-                        case "shaman":  
+                        case "fighter":
+                                return "【风尘女子】";
+                        case "swordsman":
+                                return "【舞剑少女】";
+                        case "alchemist":
+                                return "【女 方 士】";
+                        case "shaman":
                                 return "【女 巫 医】";
-                        case "beggar":  
-                                return "【女叫花子】";      
+                        case "beggar":
+                                return "【女叫花子】";
                         case "shiny":
-       case "huanu":       return "【移花宫花奴】"; 
-       case "yihuashinv":     return "【移花宫侍女】"; 
-       case "chuanren":      return "【移花宫传人】"; 
+       case "huanu":       return "【移花宫花奴】";
+       case "yihuashinv":     return "【移花宫侍女】";
+       case "chuanren":      return "【移花宫传人】";
                                 return "【光明女使】";
-                        default:                        
-                                return NOR "【"MAG"芊芊民女"NOR"】";              
+                        default:
+                                return NOR "【"MAG"芊芊民女"NOR"】";
                         }
                 }}
         default:
  switch(wizhood(ob)) {
-                case "(admin)":                 
-return NOR "【"HIR"天之战神"NOR"】" ;   	
-                case "(arch)":                  
+                case "(admin)":
+return NOR "【"HIR"天之战神"NOR"】" ;
+                case "(arch)":
                         return NOR "【"HIY"地之守护"NOR"】" ;
-                case "(wizard)":                
+                case "(wizard)":
                         return NOR "【"HIC"护法尊者"NOR"】" ;
-                case "(apprentice)":            
-                        return NOR "【"HIG"天宫侍卫"NOR"】" ;  
-                case "(immortal)":              
+                case "(apprentice)":
+                        return NOR "【"HIG"天宫侍卫"NOR"】" ;
+                case "(immortal)":
                         return NOR "【"HIB"逍遥散仙"NOR"】" ;
                 default:
                         if( ((int)ob->query("PKS") > 50) )
@@ -284,7 +284,7 @@ return NOR "【"HIR"天之战神"NOR"】" ;
                         else if (shen >= 5000)
                                 return  "【"HIG"武林新秀"NOR"】";
                         else if (shen >= 1000)
-                                return  "【"HIG"小有名声"NOR"】";        
+                                return  "【"HIG"小有名声"NOR"】";
                         else if (shen >= 500)
                                 return NOR"【"CYN"小有侠义"NOR"】";
                         else if (shen <= -1000000)
@@ -296,10 +296,10 @@ return NOR "【"HIR"天之战神"NOR"】" ;
                         else if (shen <= -50000)
                                 return "【"YEL"恶名远扬"NOR"】";
                         else if (shen <= -10000)
-                                return "【"YEL"小有恶名"NOR"】";        
+                                return "【"YEL"小有恶名"NOR"】";
                         else if (shen <= -500)
                                 return "【"HIB"走上邪道"NOR"】";
-                        else if( (int)ob->query("thief") > 10 ) 
+                        else if( (int)ob->query("thief") > 10 )
                                 return NOR"【"YEL" 神  偷 "NOR"】";
                         else
                                switch(menpai) {
@@ -326,7 +326,7 @@ return NOR "【"HIR"天之战神"NOR"】" ;
 								return NOR "【"HIB" 道  士 "NOR"】";
 						if (exp>5000)
 								return NOR "【"HIB"大 道 童"NOR"】";
-						return "【 道  童 】" ;	
+						return "【 道  童 】" ;
 
 					case "华山派":
 						if (exp>10000000) {
@@ -340,7 +340,7 @@ return NOR "【"HIR"天之战神"NOR"】" ;
 								return NOR "【 "HIR"剑  圣"NOR" 】";
 							else
 								return NOR "【 "HIM"剑  魔"NOR" 】";
-							}	
+							}
 						if (exp>1000000) {
 							if (shen >= 0)
 								return NOR "【 "GRN"剑  仙"NOR" 】";
@@ -389,7 +389,7 @@ return NOR "【"HIR"天之战神"NOR"】" ;
 								return NOR "【"HIR"魔 见 愁"NOR"】";
 							else
 								return NOR "【"HIR" 狂  魔 "NOR"】";
-							}	
+							}
 						if (exp>5000000)
 								return NOR "【"CYN"世外高人"NOR"】";
 						if (exp>1000000)
@@ -431,7 +431,7 @@ return NOR "【"HIR"天之战神"NOR"】" ;
 
 					default:
                                 switch(ob->query("class")) {
-                                case "bonze":           
+                                case "bonze":
                                         if (budd >= 150)
                                                 return  "【"HIY" 长  老"NOR" 】";
                                         else if (budd >= 120)
@@ -446,27 +446,27 @@ return NOR "【"HIR"天之战神"NOR"】" ;
                                                 return  "【"YEL" 比  丘"NOR" 】" ;
                                         else
                                                 return "【 僧  人 】";
-                                case "yishi":   
+                                case "yishi":
                                                 return "【江湖义士】";
-                                case "taoist":  
-                                                return "【云游道士】";                               
-                                case "bandit":  
+                                case "taoist":
+                                                return "【云游道士】";
+                                case "bandit":
                                                 return "【梁上君子】";
-                                case "scholar": 
-                                                return "【翩翩才子】";                  
-                                case "officer": 
+                                case "scholar":
+                                                return "【翩翩才子】";
+                                case "officer":
                                                 return "【差    人】";
-                                case "swordsman":       
-                                                return "【多情剑客】";                    
-                                case "alchemist":       
-                                                return "【 方  士 】";                   
-                                case "shaman":  
+                                case "swordsman":
+                                                return "【多情剑客】";
+                                case "alchemist":
+                                                return "【 方  士 】";
+                                case "shaman":
                                                 return "【 巫  医 】";
-                                case "beggar":  
-                                                return "【穷叫花子】";      
+                                case "beggar":
+                                                return "【穷叫花子】";
                                 case "shiny":
                                                 return "【光明使者】";
-                                default:                
+                                default:
                                         return "【布衣平民】";
                                 }
                 }
@@ -658,9 +658,9 @@ string query_close(object ob, int age, string rgender)
                         a2 = ob->query("age");
                 else    a2 = age;
         }
-        
+
         if( !rgender )
-                gender = ob->query("gender");                                           
+                gender = ob->query("gender");
         else    gender = rgender;
 
         switch ( gender ) {
@@ -738,7 +738,7 @@ str = ob->query_temp("apply/name")[0] + "(" +ob->query_temp("apply/id")[0] + ")"
 	}
 	else
 	{
-if(userp(ob)) icon=( ob->query("gender") == "男性" )?"01188":"01181";	
+if(userp(ob)) icon=( ob->query("gender") == "男性" )?"01188":"01181";
 		else if(living(ob)) icon = "00901";
 		else
 		if(strsrch(id,"corpse",-1)!=-1)
